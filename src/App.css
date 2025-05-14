@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #0b0b0b;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo img {
+  height: 24px;
+}
+
+.logo span {
+  color: #a855f7;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-links li:hover {
+  color: #a855f7;
+}
+
+.cta-button {
+  background: linear-gradient(to right, #a855f7, #7c3aed);
+  border: none;
+  border-radius: 9999px;
+  padding: 0.5rem 1.5rem;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background: linear-gradient(to right, #9333ea, #6b21a8);
+}
