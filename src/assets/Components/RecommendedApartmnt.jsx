@@ -1,5 +1,7 @@
 import { FaLocationDot, FaDog, FaBath, FaBed } from "react-icons/fa6";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import FrameOne from "../Images/FrameOne.png"
+import FrameTwo from "../Images/AboutImageTwo.png"
 
 const apartments = [
   {
@@ -43,7 +45,7 @@ export default function RecommendedApartments() {
         {apartments.map((apt) => (
           <div key={apt.id} className="bg-[#141414] rounded-3xl overflow-hidden shadow-lg w-full max-w-md">
             <div className="relative">
-              <img src={apt.imageUrl} alt={apt.title} className="w-full h-64 object-cover rounded-t-3xl" />
+              <img src={FrameOne} alt={apt.title} className="w-full h-64 object-cover rounded-t-3xl" />
               {/* Optional image carousel dots */}
               <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex gap-1">
                 <div className="w-2 h-2 bg-white rounded-full"></div>
@@ -75,7 +77,7 @@ export default function RecommendedApartments() {
                 {apt.reviewers.map((src, idx) => (
                   <img
                     key={idx}
-                    src={src}
+                    src={FrameTwo}
                     className="w-6 h-6 rounded-full border-2 border-black"
                     alt="reviewer"
                   />

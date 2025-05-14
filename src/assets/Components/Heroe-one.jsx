@@ -1,5 +1,4 @@
-import Hero
-
+import Hero from '../Images/Hero.png'
 // HeroSection.jsx
 export default function HeroSection() {
     return (
@@ -24,9 +23,9 @@ export default function HeroSection() {
         </div>
   
         {/* Image Section */}
-        <div className="mt-12 rounded-2xl overflow-hidden shadow-xl relative max-w-6xl mx-auto">
+        <div className="mt-12 rounded-2xl overflow-hidden shadow-xl relative max-w-6xl mx-auto Hero">
           <img
-            src="../Images/Hero.png"
+            src={Hero}
             alt="Living Room"
             className="w-full object-cover"
           />
